@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+    text-align: center;
+}
+
+form{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 205px;
+}
