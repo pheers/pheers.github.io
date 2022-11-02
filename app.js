@@ -1,3 +1,4 @@
+let tg = window.Telegram.WebApp;
 var params = window
     .location
     .search
