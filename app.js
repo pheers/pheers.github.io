@@ -27,6 +27,7 @@ onblur = function(){
             tg.MainButton.text = "Записаться"
             tg.MainButton.show()
         }
+        h.innerHTML = "eeeee"
         
     }else{
         if(tg.MainButton.isVisible){
