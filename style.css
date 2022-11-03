@@ -1,16 +1,92 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
 body{
-    background-color: white;
-    text-align: center;
+    background-color: #FFE9D4;
+    overflow:hidden;
+    overflow-y:hidden;  /*для вертикального*/
+    overflow-x:hidden;
 }
 
-form{
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 40px;
-    padding-bottom: 50px;
+.header{
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+}
+
+#search{
+    width: 30px;
+    margin: auto 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+
+.header > .input{
+    position: relative;
+    margin: 0 15px;
+    width: calc(100% - 110px);
+}
+.header > .input > input{
+    font-family: 'Jost', sans-serif;
+    background-color: #FFE9D4;
+    border: none;
+    width: 100%;
+    font-size: 20px;;
+    padding: 12px 10px 10px 50px;
+    border-radius: 15px;
+}
+
+.header > .input > input:active{
+    border: none;
+}
+
+.cards{
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    padding-left: 50px;
+    overflow:hidden;
+    overflow-x:scroll;
+    white-space: nowrap;
+  scrollbar-width: none; 
+}
+
+.card{
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px;
     border-radius: 20px;
-    background-color: lightgray;
-    width: 205px;
+    position: relative;
+  text-align: center;
+}
+
+.cards::-webkit-scrollbar {
+    display: none; /*chrome*/
+}
+
+.card > span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin-left: 30px;
+}
+
+.card > img{
+    position: absolute;
+    left:10px;
+    bottom: 15px;
 }
