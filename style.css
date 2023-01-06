@@ -22,6 +22,7 @@ h1{
 }
 
 .popup{
+    display: none;
     height: calc(100vh - 80px);
     width: calc(100vw - 70px);
     background-color: #ffffff;
