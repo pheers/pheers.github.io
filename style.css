@@ -1,92 +1,54 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-html{height:100%}
-body{line-height:1}
-ol,ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-table{border-collapse:collapse;border-spacing:0}
-
-body{
-    background-color: #FFE9D4;
-    overflow:hidden;
-    overflow-y:hidden;  /*для вертикального*/
-    overflow-x:hidden;
+*{
+    margin: 10px 0;
+    padding: 0;
+    font-family: 'Radio Canada';
+}
+img{
+    width: 90%;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 15px 15px 0 #ff0000, -15px 15px 0 #ff0000
+}
+p{
+    margin-bottom: 20px;
+    color: #767474;
+}
+h1{
+    margin: 20px;
+    color:#534C4C;
 }
 
-.header{
-    background-color: white;
+.description{
     padding: 20px;
-    border-radius: 0 0 20px 20px;
-    display: flex;
 }
 
-#search{
-    width: 30px;
-    margin: auto 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin-left: 10px;
-    border-radius: 10px;
-}
-
-
-.header > .input{
-    position: relative;
-    margin: 0 15px;
-    width: calc(100% - 110px);
-}
-.header > .input > input{
-    font-family: 'Jost', sans-serif;
-    background-color: #FFE9D4;
-    border: none;
-    width: 100%;
-    font-size: 20px;;
-    padding: 12px 10px 10px 50px;
+.popup{
+    height: calc(100vh - 80px);
+    width: calc(100vw - 70px);
+    background-color: #ffffff;
+    left:0;
+    top:0;
+    position: fixed;
     border-radius: 15px;
-}
-
-.header > .input > input:active{
-    border: none;
-}
-
-.cards{
-    display: flex;
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
-    padding-left: 50px;
-    overflow:hidden;
-    overflow-x:scroll;
-    white-space: nowrap;
-  scrollbar-width: none; 
-}
-
-.card{
-    background-color: white;
-    margin-right: 20px;
+    margin: 20px 15px;
     padding: 20px;
-    border-radius: 20px;
-    position: relative;
-  text-align: center;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+    overflow-y: scroll;
 }
+input{
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    height: 40px;
+    border: #767676 solid 1px;
+    margin: 10px 0;
 
-.cards::-webkit-scrollbar {
-    display: none; /*chrome*/
+    margin-bottom: 15px;
+    padding: 0 10px;
+    outline: none;
 }
-
-.card > span{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    margin-left: 30px;
+input:focus{
+    --webkit-appearance: none;
+    border: #ff0000 solid 1px;
 }
-
-.card > img{
-    position: absolute;
-    left:10px;
-    bottom: 15px;
+label{
+    margin: 0 7px;
 }
